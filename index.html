@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="relative text-white">
+
+  <!-- Header -->
+  <header class="header fixed w-full bg-black bg-opacity-50 p-4 top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <!-- Mobile Menu Toggle -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Menu">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-yellow-400 transition">Home 🏡</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 transition">About 😎</a></li>
+        <li><a href="#services" class="hover:text-yellow-400 transition">Services 👨🏻‍💻</a></li>
+        <li><a href="#projects" class="hover:text-yellow-400 transition">Projects 🧾</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 transition">Contact 📳</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-80 w-full text-center mt-2 space-y-4 py-4">
+      <li><a href="#home" class="block hover:text-yellow-400 transition">Home 🏡</a></li>
+      <li><a href="#about" class="block hover:text-yellow-400 transition">About 😎</a></li>
+      <li><a href="#projects" class="block hover:text-yellow-400 transition">Projects 🧾</a></li>
+      <li><a href="#contact" class="block hover:text-yellow-400 transition">Contact 📳</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="hero min-h-screen flex items-center justify-center px-4 text-center relative">
+  <div class="hero-content z-10 max-w-3xl flex flex-col md:flex-row items-center gap-8">
+    <!-- Picture Container -->
+    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white border-opacity-20 shadow-lg">
+      <img src="FARAZ.jpg"
+        alt="Faraz Suhel" 
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <!-- Text Content -->
+    <div>
+      <!-- Badge: Hello, I'm -->
+      <div class="inline-flex items-center space-x-2 bg-white bg-opacity-10 px-4 py-2 rounded-full mb-6">
+        <span class="text-yellow-400 text-xl">🔥</span>
+        <span class="text-white font-medium">Hello, I'm</span>
+      </div>
+      
+      <!-- Name & Title -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-2">Faraz Suhel</h1>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl text-blue-400 font-semibold mb-4">Frontend Web Developer</h2>
+      
+      <!-- Short Intro -->
+      <p class="text-gray-300 mb-8">
+        Building scalable and secure web applications with modern technologies.  
+        Passionate about creating efficient, user-friendly solutions.
+      </p>
+      
+      <!-- Hero Buttons -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <a 
+          href="https://github.com/priyanshu494mishra" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hero-btn bg-gray-800 hover:bg-gray-900 text-white">
+          GitHub
+        </a>
+        <a 
+          href="http://linkedin.com/in/faraz-suhel-1594b732a" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="hero-btn bg-blue-500 hover:bg-blue-600 text-white">
+          LinkedIn
+        </a>
+        <a 
+          href="resume faraz.pdf" download="Faraz Suhel_CV.pdf" class="hero-btn bg-green-600 hover:bg-green-700 text-white">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+   
+  <!-- About Section -->
+<section id="about" class="py-20 text-center px-4">
+  <!-- Box for Heading -->
+  <div class="heading-box bg-white bg-opacity-10 p-4 rounded-lg inline-block mb-4">
+    <i class="fas fa-user text-yellow-400 mr-2"></i>
+    <h2 class="text-4xl font-semibold inline">About Me</h2>
+  </div>
+  <!-- Main Paragraph -->
+  <p class="max-w-3xl mx-auto text-lg text-gray-300 mt-6">
+    Passionate web developer with strong skills in Java and data structures. Experienced in front-end development with HTML, CSS, and JavaScript. Enthusiastic about continuous learning, problem-solving, and working on personal projects to enhance coding expertise.
+  
+    <br/><br/>
+    I love tackling new challenges and delivering robust, user-centric products.
+  </p>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 px-4 bg-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-4xl font-bold mb-6 text-white">What I Offer</h2>
+    <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+      I specialize in creating modern, user-friendly web experiences. Here are the key services I provide to bring your ideas to life.
+    </p>
+    
+    <!-- Services Grid -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+      
+      <!-- Service Card 1: Frontend Development -->
+      <div class="service-card bg-gray-800 rounded-xl p-8 flex flex-col items-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+        <!-- Icon -->
+        <div class="h-20 w-20 mb-6 flex items-center justify-center text-5xl text-blue-500 bg-blue-500 bg-opacity-10 rounded-full">
+          <img src="front end.jpg" alt="Frontend">
+        </div>
+        
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-white mb-4">Frontend Development</h3>
+        
+        <!-- Description -->
+        <p class="text-gray-300 mb-6">
+          I build responsive, fast, and visually appealing websites using modern frameworks like React, Vue.js, and Tailwind CSS. My focus is on delivering seamless user experiences.
+        </p>
+        
+        <!-- Learn More Button -->
+        <a href="#" class="inline-flex items-center text-blue-500 hover:text-blue-400 transition">
+          <span>Learn More</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+      
+      <!-- Service Card 2: UI/UX Design -->
+      <div class="service-card bg-gray-800 rounded-xl p-8 flex flex-col items-center hover:shadow-2xl transition-transform transform hover:-translate-y-2">
+        <!-- Icon -->
+        <div class="h-20 w-20 mb-6 flex items-center justify-center text-5xl text-pink-500 bg-pink-500 bg-opacity-10 rounded-full">
+          <img src="back.jpg" alt="Frontend">
+        </div>
+        
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-white mb-4">UI/UX Design</h3>
+        
+        <!-- Description -->
+        <p class="text-gray-300 mb-6">
+          I craft intuitive and engaging user interfaces, ensuring a seamless user experience. From wireframes to prototypes, I focus on clean and functional designs.
+        </p>
+        
+        <!-- Learn More Button -->
+        <a href="#" class="inline-flex items-center text-pink-500 hover:text-pink-400 transition">
+          <span>Learn More</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4">
+      <!-- Section Title -->
+      <h2 class="text-center text-3xl font-bold mb-8 text-white">Skills Overview</h2>
+      
+      <!-- Skills Container: 3 columns on large screens -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Frontend Development Card -->
+        <div class="skill-card bg-gray-800 rounded-lg p-6 shadow-sm flex flex-col">
+          <!-- Card Header -->
+          <div class="flex items-center mb-4">
+            <div class="text-3xl mr-2 text-blue-400">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white"> 🌐Frontend Development</h3>
+          </div>
+          <!-- Badges for Frontend Skills -->
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge">◈ HTML</span>
+            <span class="skill-badge">◈ CSS</span>
+            <span class="skill-badge">◈ JavaScript</span>
+            <span class="skill-badge">◈ TypeScript</span>
+            <span class="skill-badge">◈ React.js</span>
+            <span class="skill-badge">◈ Tailwind CSS</span>
+          </div>
+        </div>
+        
+        <!-- UI/UX Design Card -->
+        <div class="skill-card bg-gray-800 rounded-lg p-6 shadow-sm flex flex-col">
+          <!-- Card Header -->
+          <div class="flex items-center mb-4">
+            <div class="text-3xl mr-2 text-pink-400">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white">UI/UX Design</h3>
+          </div>
+          <!-- Badges for UI/UX Skills -->
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge">◈ Figma</span>
+            <span class="skill-badge">◈ Sketch</span>
+            <span class="skill-badge">◈ Adobe XD</span>
+            <span class="skill-badge">◈ Wireframing</span>
+            <span class="skill-badge">◈ Prototyping</span>
+          </div>
+        </div>
+        
+        <!-- Tools & Others Card -->
+        <div class="skill-card bg-gray-800 rounded-lg p-6 shadow-sm flex flex-col">
+          <!-- Card Header -->
+          <div class="flex items-center mb-4">
+            <div class="text-3xl mr-2 text-green-400">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-white">Tools & Others</h3>
+          </div>
+          <!-- Badges for Tools -->
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-badge">◈ Git</span>
+            <span class="skill-badge">◈ GitHub</span>
+            <span class="skill-badge">◈ VS Code</span>
+            <span class="skill-badge">◈ Postman</span>
+            <span class="skill-badge">◈ Netlify</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Certification -->
+  <section id="certifications" class="py-20 px-4 bg-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Title -->
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-bold mb-4 text-white">Certifications</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+          Here are some of the certifications I've earned to validate my skills and knowledge.
+        </p>
+      </div>
+  
+      <!-- Certificates Container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Certificate 1 -->
+        <div class="certificate-card bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="certificate-img h-48 overflow-hidden">
+            <img src="Python.png" 
+                 alt="Web Development Certificate" 
+                 class="w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Python </h3>
+            <p class="text-gray-300 mb-4">Issued by Let's Upgrade</p>
+            <a href="python.pdf" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+              View Certificate
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Certificate 2 -->
+        <div class="certificate-card bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="certificate-img h-48 overflow-hidden">
+            <img src="C++.png" 
+                 alt="JavaScript Certificate" 
+                 class="w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">C++</h3>
+            <p class="text-gray-300 mb-4">Issued by Let's Upgrade</p>
+            <a href="c++.pdf" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+              View Certificate
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Certificate 3 -->
+        <div class="certificate-card bg-gray-700 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+          <div class="certificate-img h-48 overflow-hidden">
+            <img src="Entrepurship.png" 
+                 alt="React Certificate" 
+                 class="w-full h-full object-cover transition-transform duration-500">
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-white mb-2">Entrepreneurship</h3>
+            <p class="text-gray-300 mb-4">Issued by NPTEL</p>
+            <a href="Entrepreneurship.pdf" class="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center">
+              View Certificate
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Certificate Modal -->
+      <div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-75 z-50 hidden items-center justify-center p-4">
+        <div class="bg-gray-800 rounded-lg max-w-4xl w-full max-h-[90vh] overflow-auto">
+          <div class="flex justify-between items-center p-4 border-b border-gray-700">
+            <h3 id="modalTitle" class="text-xl font-bold text-white">Certificate Title</h3>
+            <button id="closeModal" class="text-gray-400 hover:text-white text-2xl">&times;</button>
+          </div>
+          <div class="p-6">
+            <img id="modalImage" src="" alt="Certificate" class="w-full h-auto rounded">
+            <div class="mt-4 flex justify-between items-center">
+              <p id="modalIssuer" class="text-gray-300">Issued by: </p>
+              <a id="downloadLink" href="#" download class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 text-center px-4 bg-gray-900">
+    <h2 class="text-4xl font-semibold mb-4 text-white">Projects</h2>
+    <p class="text-gray-300 max-w-2xl mx-auto">
+      Below are a few notable projects I've worked on recently.  
+      Check out the live demos or review the code.
+    </p>
+
+    <!-- Cards Container -->
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      
+      <!-- Project Card 1 -->
+      <div class="bg-gray-800 rounded-xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
+        <!-- Project Image -->
+        <div class="h-48 bg-gray-700 mb-6 rounded-lg flex items-center justify-center overflow-hidden">
+          <!-- Replace with a real project screenshot or icon -->
+          <img src="tic.jpg" alt="Tic-Tac-Toe Project" loading="lazy" class="logo">
+        </div>
+        
+        <!-- Project Title -->
+        <h3 class="text-2xl font-bold text-white mb-3">Tic-Tac-Toe</h3>
+        
+        <!-- Project Description -->
+        <p class="text-gray-300 mb-6">
+          A full-featured Tic-Tac-Toe game application enabling users to play the classic game with a modern and responsive interface.
+        </p>
+
+        <!-- Tech Stack (Badges) -->
+        <div class="flex flex-wrap gap-2 mb-6 justify-center">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-center gap-4">
+          <a href="https://farazsuhel.github.io/Tic-Tac-Toe/" class="project-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition">
+            Live Demo
+          </a>
+        </div>
+      </div>
+      
+      <!-- Project Card 2 -->
+      <div class="bg-gray-800 rounded-xl p-8 hover:shadow-2xl transition transform hover:-translate-y-1">
+        <div class="h-48 bg-gray-700 mb-6 rounded-lg flex items-center justify-center overflow-hidden">
+          <img src="ut.jpg" alt="Restaurant Project" loading="lazy" class="logo">
+        </div>
+        <h3 class="text-2xl font-bold text-white mb-3">Restaurant 🍽</h3>
+        <p class="text-gray-300 mb-6">
+          A personal website for a restaurant where you can see the menu and order via WhatsApp.
+        </p>
+        <div class="flex flex-wrap gap-2 mb-6 justify-center">
+          <span class="tech-badge">HTML</span>
+          <span class="tech-badge">CSS</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+        <div class="flex justify-center gap-4">
+          <a href="https://priyanshu494mishra.github.io/houseoftaste/" class="project-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition">
+            Live Demo
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section (two-column layout) -->
+  <section id="contact" class="py-10 px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Heading -->
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-semibold mb-2">Contact Me</h2>
+        <p class="text-gray-300">Feel free to reach out to me!</p>
+      </div>
+      
+      <!-- Grid Layout for Contact -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Left: Email & Social -->
+        <div class="space-y-6">
+          <!-- Email Card -->
+          <div class="contact-card">
+            <h3 class="contact-title">
+              <i class="fas fa-envelope text-blue-600"></i>
+              <span>📧 Email</span>
+            </h3>
+            <p class="text-gray-300">
+              <a href="mailto:farazsuhel25@gmail.com" class="text-blue-400 hover:underline">
+                farazsuhel25@gmail.com
+              </a>
+            </p>
+          </div>
+          
+          <!-- Social Card -->
+          <div class="contact-card">
+            <h3 class="contact-title">
+              <i class="fas fa-users text-blue-600"></i>
+              <span>Social</span>
+            </h3>
+            <p class="text-gray-300 mb-4">Connect with me on social media:</p>
+            <div class="flex space-x-2">
+              <a href="http://linkedin.com/in/faraz-suhel-1594b732a" class="social-btn bg-blue-500 hover:bg-blue-600">
+                LinkedIn
+              </a>
+              <a href="https://github.com/Farazsuhel" class="social-btn bg-gray-800 hover:bg-gray-900">
+                GitHub
+              </a>
+              <a href="https://www.instagram.com/_faraz_khan_2004" class="social-btn bg-blue-400 hover:bg-blue-500">
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Send a Message Form -->
+        <div class="contact-card">
+          <h3 class="contact-title">
+            <i class="fas fa-paper-plane text-blue-600"></i>
+            <span>Send a Message</span>
+          </h3>
+          
+          <form action="#" method="POST" class="space-y-4 mt-4">
+            <!-- Name Field -->
+            <div>
+              <label for="name" class="block text-gray-200 font-medium mb-1">Your Name</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="contact-input"
+                placeholder="Enter your name"
+              />
+            </div>
+            
+            <!-- Email Field -->
+            <div>
+              <label for="email" class="block text-gray-200 font-medium mb-1">Your Email</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="contact-input"
+                placeholder="Enter your email"
+              />
+            </div>
+            
+            <!-- Message Field -->
+            <div>
+              <label for="message" class="block text-gray-200 font-medium mb-1">Your Message</label>
+              <textarea
+                id="message" 
+                name="message" 
+                rows="4" 
+                class="contact-input"
+                placeholder="Enter your message here..."
+              ></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <button 
+              type="submit" 
+              class="bg-blue-600 text-white font-bold px-6 py-2 rounded-md hover:bg-blue-700 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer w-full p-4 text-center text-yellow-300">
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Link to external JS -->
+  <script src="index.js"></script>
+</body>
+</html>
